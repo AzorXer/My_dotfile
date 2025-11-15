@@ -16,7 +16,7 @@ Personal dotfiles for Arch Linux with i3 window manager.
 
 ### Quick Install
 
-git clone https://github.com/yourusername/My_dotfile.git ~/dotfiles
+git clone https://github.com/AzorXer/My_dotfile.git ~/dotfiles
 cd ~/dotfiles
 chmod +x install.sh
 ./install.sh### Arch Linux Setup
@@ -53,7 +53,6 @@ sudo bash setup.shThis will:
 - **Auto Configuration** - Sets up brightness and volume controls
 - **Wallpaper Management** - Automatic wallpaper setup
 - **Font Installation** - Installs FiraCode Nerd Font
-- **Clean Organization** - Similar to [dikiaap's dotfiles](https://github.com/dikiaap/dotfiles)
 
 ## Key Bindings
 
