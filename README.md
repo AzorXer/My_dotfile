@@ -14,34 +14,41 @@ Personal dotfiles for Arch Linux with i3 window manager.
 
 ## Installation
 
-### Quick Install
+### Complete Installation
 
+The `install.sh` script does everything in one go:
+
+```bash
 git clone https://github.com/AzorXer/My_dotfile.git ~/dotfiles
 cd ~/dotfiles
 chmod +x install.sh
-./install.sh### Arch Linux Setup
+sudo ./install.sh
+```
 
-For a complete Arch Linux setup with all packages:
-
-sudo bash setup.shThis will:
-- Install all required packages
+This will:
+- Install all required packages (kitty, rofi, i3, dunst, picom, etc.)
 - Detect your hardware (graphics/audio)
-- Configure brightness and volume controls
+- Configure brightness and volume controls automatically
 - Set up wallpapers
 - Install fonts
+- Link all dotfiles to your home directory
+
+**Note:** The script will automatically request sudo privileges if needed.
 
 ## Structure
 
 ```
 .
-├── install.sh              # Main installation script
-├── setup.sh                # Arch Linux setup script
+├── install.sh              # Unified installation script (does everything)
 ├── .config/                # Application configs
 │   ├── i3/                 # i3 window manager
 │   ├── kitty/              # Terminal
 │   ├── rofi/               # App launcher
 │   ├── dunst/              # Notifications
-│   └── picom/              # Compositor
+│   ├── picom/              # Compositor
+│   └── i3blocks/           # Status bar blocks
+├── .zsh/                   # Zsh configuration
+├── .zshrc                  # Zsh config file
 ├── FiraCode/               # Fonts
 ├── wallpapers/             # Wallpapers
 └── bin/                    # Custom scripts
