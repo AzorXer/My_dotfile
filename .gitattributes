@@ -8,3 +8,5 @@
 # Config files should use LF
 *.conf text eol=lf
 *.config text eol=lf
+*.rasi text eol=lf
+*.dunstrc text eol=lf
